@@ -1,0 +1,92 @@
+
+/** general styles for the teminal **/
+.output {
+    line-height: 1.3em;
+}
+
+.output > span {
+    display: block;
+    font-weight: normal;
+    color: var(--terminal-colour-white);
+}
+
+.output a {
+    all: revert;
+    font-weight: normal;
+    color: var(--terminal-colour-white);
+}
+
+.prompt {
+    margin-right: 0.5em;
+}
+
+.command {
+    display: flex;
+}
+
+.command.input .prompt {
+    color: var(--terminal-prompt-input-colour);
+    font-weight: normal;
+}
+
+.command .prompt {
+    color: var(--terminal-prompt-colour);
+    font-weight: bold;
+}
+
+.command .prompt {
+    margin-right: 0.5em;
+}
+
+.command .input {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font: inherit;
+    flex: 1;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+/* sgr - text effects */
+.output span[data-style-weight="bold"] { font-weight: bold; }
+.output span[data-style-weight="light"] { font-weight: lighter; }
+.output span[data-style-italic="italic"] { font-style: italic; }
+.output span[data-style-underline="underline"] { text-decoration: underline; }
+    
+/* sgr - text colours */
+.output span[data-style-colour="black"] { color: var(--terminal-colour-black); }
+.output span[data-style-colour="red"] { color: var(--terminal-colour-red); }
+.output span[data-style-colour="green"] { color: var(--terminal-colour-green); }
+.output span[data-style-colour="yellow"] { color: var(--terminal-colour-yellow); }
+.output span[data-style-colour="blue"] { color: var(--terminal-colour-blue); }
+.output span[data-style-colour="magenta"] { color: var(--terminal-colour-magenta); }
+.output span[data-style-colour="cyan"] { color: var(--terminal-colour-cyan); }
+.output span[data-style-colour="white"] { color: var(--terminal-colour-white); }
+.output span[data-style-colour="bright-black"] { color: var(--terminal-colour-bright-black); }
+.output span[data-style-colour="bright-red"] { color: var(--terminal-colour-bright-red); }
+.output span[data-style-colour="bright-green"] { color: var(--terminal-colour-bright-green); }
+.output span[data-style-colour="bright-yellow"] { color: var(--terminal-colour-bright-yellow); }
+.output span[data-style-colour="bright-blue"] { color: var(--terminal-colour-bright-blue); }
+.output span[data-style-colour="bright-magenta"] { color: var(--terminal-colour-bright-magenta); }
+.output span[data-style-colour="bright-cyan"] { color: var(--terminal-colour-bright-cyan); }
+.output span[data-style-colour="bright-white"] { color: var(--terminal-colour-bright-white); }
+    
+/* sgr - background colours */
+.output span[data-style-background="black"] { background-color: var(--terminal-colour-black); }
+.output span[data-style-background="red"] { background-color: var(--terminal-colour-red); }
+.output span[data-style-background="green"] { background-color: var(--terminal-colour-green); }
+.output span[data-style-background="yellow"] { background-color: var(--terminal-colour-yellow); }
+.output span[data-style-background="blue"] { background-color: var(--terminal-colour-blue); }
+.output span[data-style-background="magenta"] { background-color: var(--terminal-colour-magenta); }
+.output span[data-style-background="cyan"] { background-color: var(--terminal-colour-cyan); }
+.output span[data-style-background="white"] { background-color: var(--terminal-colour-white); }
+.output span[data-style-background="bright-black"] { background-color: var(--terminal-colour-bright-black); }
+.output span[data-style-background="bright-red"] { background-color: var(--terminal-colour-bright-red); }
+.output span[data-style-background="bright-green"] { background-color: var(--terminal-colour-bright-green); }
+.output span[data-style-background="bright-yellow"] { background-color: var(--terminal-colour-bright-yellow); }
+.output span[data-style-background="bright-blue"] { background-color: var(--terminal-colour-bright-blue); }
+.output span[data-style-background="bright-magenta"] { background-color: var(--terminal-colour-bright-magenta); }
+.output span[data-style-background="bright-cyan"] { background-color: var(--terminal-colour-bright-cyan); }
+.output span[data-style-background="bright-white"] { background-color: var(--terminal-colour-bright-white); }

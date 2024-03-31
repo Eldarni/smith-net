@@ -1,0 +1,53 @@
+
+:root {
+
+    /** general colour settings **/
+    --background-colour: #222222;
+
+    /**  colour scheme settings for the terminal prompt **/
+    --terminal-prompt-colour: #f3e5ab;
+    --terminal-prompt-input-colour: #ffffff;
+
+    /** standard colour scheme settings for the terminal output **/
+    --terminal-colour-black:   #000000;
+    --terminal-colour-red:     #cc0000;
+    --terminal-colour-green:   #4e9a06;
+    --terminal-colour-yellow:  #c4a000;
+    --terminal-colour-blue:    #729fcf;
+    --terminal-colour-magenta: #75507b;
+    --terminal-colour-cyan:    #06989a;
+    --terminal-colour-white:   #d3d7cf;
+
+    /** bright colour scheme settings for the terminal output **/
+    --terminal-colour-bright-black:   #555753;
+    --terminal-colour-bright-red:     #ef2929;
+    --terminal-colour-bright-green:   #8ae234;
+    --terminal-colour-bright-yellow:  #fce94f;
+    --terminal-colour-bright-blue:    #32afff;
+    --terminal-colour-bright-magenta: #ad7fa8;
+    --terminal-colour-bright-cyan:    #34e2e2;
+    --terminal-colour-bright-white:   #ffffff;
+
+}
+
+html, body {
+
+    /** colour scheme settings **/
+    background-color: var(--background-colour);
+
+    /** font settings **/
+    font-family: "Inconsolata", "Courier New", Courier, monospace;
+    font-weight: bold;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0em 0.5em 1em;
+}
+
+#terminal {
+    flex: 1 0 100%;
+
+}
